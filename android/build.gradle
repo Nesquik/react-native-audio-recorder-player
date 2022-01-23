@@ -2,7 +2,7 @@
 buildscript {
     ext {
         gradleVersion = '4.1.0'
-        kotlinVersion = '1.5.31'
+        kotlinVersion = '1.5.0'
     }
 
     repositories {
@@ -23,7 +23,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-  compileSdkVersion safeExtGet('compileSdkVersion', 30)
+  compileSdkVersion 30
 
   defaultConfig {
     minSdkVersion safeExtGet('minSdkVersion', 24)
@@ -64,5 +64,5 @@ dependencies {
     implementation "androidx.annotation:annotation:$androidXAnnotation"
     implementation "androidx.browser:browser:$androidXBrowser"
   }
-  classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
+  // classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
 }
