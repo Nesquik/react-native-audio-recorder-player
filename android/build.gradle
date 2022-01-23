@@ -20,6 +20,7 @@ def safeExtGet(prop, fallback) {
 }
 
 apply plugin: 'com.android.library'
+
 apply plugin: 'kotlin-android'
 
 android {
