@@ -20,8 +20,7 @@ def safeExtGet(prop, fallback) {
 }
 
 apply plugin: 'com.android.library'
-
-apply plugin: 'kotlin-android'
+// apply plugin: 'kotlin-android'
 
 android {
   compileSdkVersion safeExtGet('compileSdkVersion', 30)
