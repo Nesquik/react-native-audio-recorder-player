@@ -87,6 +87,7 @@ class RNAudioRecorderPlayerModule(private val reactContext: ReactApplicationCont
                         var maxAmplitude = 0
                         if (mediaRecorder != null) {
                             maxAmplitude = mediaRecorder!!.maxAmplitude
+                            // obj.putDouble("maxAmplitude", maxAmplitude)
                         }
                         var dB = -160.0
                         val maxAudioSize = 32767.0

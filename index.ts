@@ -57,6 +57,7 @@ export enum AVEncodingOption {
   mp1 = 'mp1',
   mp2 = 'mp2',
   alac = 'alac',
+  mp4 = 'mp4',
   amr = 'amr',
   flac = 'flac',
   opus = 'opus',
@@ -72,6 +73,7 @@ type AVEncodingType =
   | AVEncodingOption.alaw
   | AVEncodingOption.mp1
   | AVEncodingOption.mp2
+  | AVEncodingOption.mp4
   | AVEncodingOption.alac
   | AVEncodingOption.amr
   | AVEncodingOption.flac
@@ -283,7 +285,7 @@ class AudioRecorderPlayer {
   stopRecorder = async (): Promise<string> => {
     if (this._isRecording) {
       this._isRecording = false;
-
+      this._hasPausedRecord = false;
       return RNAudioRecorderPlayer.stopRecorder();
     }
 
