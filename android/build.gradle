@@ -2,7 +2,7 @@
 buildscript {
     ext {
         gradleVersion = '4.1.0'
-        kotlinVersion = '1.6.0'
+        kotlinVersion = '1.5.0'
         compileSdkVersion = 29
         targetSdkVersion = 29
     }
@@ -26,11 +26,11 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-  compileSdkVersion safeExtGet('compileSdkVersion', 31)
+  compileSdkVersion safeExtGet('compileSdkVersion', 30)
 
   defaultConfig {
     minSdkVersion safeExtGet('minSdkVersion', 24)
-    targetSdkVersion safeExtGet('targetSdkVersion', 31)
+    targetSdkVersion safeExtGet('targetSdkVersion', 30)
     versionCode 1
     versionName "1.0"
   }
