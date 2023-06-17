@@ -50,7 +50,7 @@ repositories {
 
 dependencies {
   implementation 'com.facebook.react:react-native:+'
-  implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${project.ext.kotlinVersion}"
+  implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${project.ext.kotlinVersion}"
 
   def supportLibVersion = safeExtGet('supportLibVersion', safeExtGet('supportVersion', null))
   def androidXVersion = safeExtGet('androidXVersion', null)
